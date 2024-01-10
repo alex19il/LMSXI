@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE autopistas [
+<!ELEMENT autopistas (evento+)>
+<!ELEMENT evento (via, pk, retencion, sentido, carrilescortados?)>
+<!ATTLIST evento
+tipo CDATA #REQUIRED
+fecha CDATA #IMPLIED>
+<!ELEMENT via (nombre, ref, origen, destino, (doble | sentido), carriles)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT ref (#PCDATA)>
+  <!ELEMENT origen (#PCDATA)>
+  <!ELEMENT destino (#PCDATA)>
+  <!ELEMENT doble EMPTY>
+  <!ELEMENT sentido (#PCDATA)>
+  <!ELEMENT carriles (#PCDATA)>
+<!ELEMENT pk (#PCDATA)>
+<!ELEMENT retencion EMPTY>
+<!ATTLIST retencion
+long CDATA #IMPLIED>
+<!ELEMENT carrilescortados (#PCDATA)>
+<!ATTLIST carrilescortados
+valor (1 | 2 | 3 | 4) #REQUIRED>
+]>
+
+<autopistas>
+  <evento tipo="" fecha="">
+   <via>
+    <nombre></nombre>
+    <ref></ref>
+    <origen></origen>
+    <destino></destino>
+    <doble/>
+    <carriles></carriles>
+   </via>
+   <pk></pk>
+  <retencion long=""/>
+   <sentido></sentido>
+   <carrilescortados valor="1"></carrilescortados>
+  </evento>
+  <evento tipo="">
+   <via>
+    <nombre></nombre>
+    <ref></ref>
+    <origen></origen>
+    <destino></destino>
+    <sentido></sentido>
+    <carriles></carriles>
+   </via>
+   <pk></pk>
+   <retencion long=""/>
+   <sentido/>
+  </evento>
+</autopistas>
