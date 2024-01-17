@@ -1,1 +1,0 @@
-Los ejercicios en blanco no fui capaz de hacerlos, ya que al intentar relacionar los distintos elementos, no hacia caso a la relación que le daba y me devolvía todos los valores posibles. No llegué a la solución, si quiera buscando información en la Wiki
